@@ -40,7 +40,7 @@ print("Ennyi 10-nél nagyobb szám van:", var)
 var = 0
 for item in lista:
     var += item
-var = var / len(lista)
+var = round(var / len(lista), 2)
 print("a lista eleminek az átlaga:", var)
 
 #7 feladat: Válogassuk szét a lista elemeit két másik listára: pozitív, negatív

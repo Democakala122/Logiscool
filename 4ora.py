@@ -38,3 +38,13 @@ for i in range(len(lista)):
     print(lista[i], end = " ")
 print()
 
+for i in range(1, 11):
+    for j in range(i):
+        print(j+1, end= " ")
+    print()
+
+num = int(input("Adj meg egy egész számat!\n"))
+for i in range(2, num):
+    if num % i == 0:
+        prime = False
+print(prime)
