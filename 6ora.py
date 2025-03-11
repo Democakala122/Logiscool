@@ -45,6 +45,24 @@ print(nevek)
 
 i = 0
 while i < len(nevek):
-    print(nevek[i], end="")
+    print(nevek[i], end=" ")
     i += 1
+print()
+
+# For ciklus
+
+for i in range(len(nevek)):
+    print(nevek[i], end=" ")
+print()
+
+# foreach ciklus
+
+for item in nevek:
+    print(item, end=" ")
+print()
+
+#Vegyítvea két ciklust
+
+for index, item in enumerate(nevek):
+    print(f"{index}: {item}", end=" ")
 print()
