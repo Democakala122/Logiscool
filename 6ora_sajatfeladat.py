@@ -57,3 +57,27 @@ for i in range(1, 17):
     lista.append(i)
     lista.append(-i)
 print(lista)
+
+#9. feladat [az első 20 prímszámot tartalmazza]
+
+lista = [2]
+k = 3
+prime = True
+while len(lista) < 20:
+    prime = True
+    for szam in lista:
+        if k % szam == 0:
+            prime = False
+    if prime:
+        lista.append(k)
+    k += 1
+print(lista)
+
+#10. feladat: [100-999, azok a számok, amelyekben szerepel a 130] (132, 813)
+lista = []
+for i in range(100, 1000):
+    szam = str(i)
+    var = szam.find("13")
+    if var != -1:
+        lista.append(i)
+print(lista)
