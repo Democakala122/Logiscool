@@ -63,14 +63,14 @@ print(lista)
 lista = [2]
 k = 3
 prime = True
-while len(lista) < 20:
+while len(lista) < 2000:
     prime = True
     for szam in lista:
         if k % szam == 0:
             prime = False
     if prime:
         lista.append(k)
-    k += 1
+    k += 2
 print(lista)
 
 #10. feladat: [100-999, azok a számok, amelyekben szerepel a 130] (132, 813)
