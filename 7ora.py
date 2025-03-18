@@ -77,3 +77,16 @@ print(not 5 > 1)
 # i | h |    h    |     i    |   h   |   i
 # h | i |    h    |     i    |   i   |   h
 # h | h |    h    |     h    |   i   |   i
+
+#Az in operátor
+#Meghatározza x elem benne van-e egy adatszerkezetben
+# 5 in lista
+lista = [6,2,3,4]
+print(5 in lista) # False
+print(2 in lista) # True
+
+szöveg = "kiscica"
+print("c" in szöveg) # True
+print("p" in szöveg) # False 
+
+#Bit szintű operátorok (majd később)
