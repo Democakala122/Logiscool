@@ -27,7 +27,6 @@ import math
 for i in range(a):
     print("#" * b)
 
-
 #3. feladat: Szöveg kódolás
 # kimenet = Kdlifgmetasöeeóon oo z   zvgt
 bemenet =  "Kódolni fogom ezt a szöveget"
@@ -44,7 +43,15 @@ for betu in bemenet:
     index += 1
 print(kimenet)
 
+#Az órai jobb megoldás,
+#De legalább megtanultam hogy str-hez lehet +, *, index-elni
 
+kimenet = ""
+for i in range(0, len(bemenet), 2):
+    kimenet += bemenet[i]
+for i in range(1, len(bemenet), 2):
+    kimenet += bemenet[i]
+print(kimenet)
 
 #4. feladat: Olvassunk be egy számot és írjuk ki a szorzó tábláját
 #Kimenet:
