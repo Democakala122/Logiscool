@@ -5,8 +5,10 @@ lista2 = [13, 54, 43, 12, 92, 12, 11]
 
 lista3 = []
 lista3 = lista1[:]
+print(lista3)
 for szam in lista2:
-    if szam in lista3 != True:
+    valt = szam in lista3
+    if valt == False:
         lista3.append(szam)
 print(lista3)
 
@@ -22,8 +24,8 @@ a = 5
 b = 10
 import math
 
-for i in range (a):
-    print("a" * int(math.fabs(b)))
+for i in range(a):
+    print("#" * b)
 
 
 #3. feladat: Szöveg kódolás
