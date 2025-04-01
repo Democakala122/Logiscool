@@ -76,10 +76,13 @@ while not passed:
 # 6. feladat: Adottak egy háromszög 3 oldalánakl hossza
 # Adjuk, meg hogy a háromszög, derékszögű, egyenlő szárú szabályos, vagy egyik sem
 def check_triangle(a,b,c):
-    if a == b or a == c or b == c:
-        print("Egyenlő szárú!")
-    if a**2 + b**2 == c**2 or a**2 + c**2 == b**2 or b**2 + c**2 == a**2:
-        print("Derékszögű!")
+    if a + b > c and a + c > b and b + c > a:
+        if a == b or a == c or b == c:
+            print("Egyenlő szárú!")
+        if a**2 + b**2 == c**2 or a**2 + c**2 == b**2 or b**2 + c**2 == a**2:
+            print("Derékszögű!")
+    else:
+        print('invalid háromszög')
 
 
 # 7. feladat: Egy futóversenyen ezek az időeredmények születtek:
@@ -100,4 +103,4 @@ fToc(72)
 cTof(0)
 kmTom(10)
 mTokm(2)
-check_triangle(3,4,5)
+check_triangle
