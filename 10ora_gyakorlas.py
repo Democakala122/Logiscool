@@ -89,6 +89,8 @@ def squared(x):
 
 print(linear(1.5))
 
+# Egy while függvénybe kéne ezt megírni de már mindjárt óra vége és lusta vagyok
+
 for i in range(-100, 100):
     if linear(i/10) == 0.0:
         print(f" LINEAR: {i/10}, {0}")
