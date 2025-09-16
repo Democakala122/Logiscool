@@ -74,7 +74,7 @@ while szam < 1000:
 #Határozzuk meg a lista elemeinek átlagát
 #Medián (középső elem) [3, 6, 9, 13, 15, 17, 18, 20] 13
 #Ha 2 elem középső akkor annak a kettő elem átlaga
-def median(lista):
+def median(lista): # kell ide SORTED
     if len(lista) % 2 == 1:
         return lista[len(lista)//2]
     else:
@@ -89,9 +89,12 @@ def szoras(lista):
     for szam in lista:
         if media > szam:
             val += media-szam
-        else:
+        else: #absolute értéket is lehetne itt használni
             val += szam-media
     return val / len(lista)
     
 
 print(szoras([1,2,3,4,5,6,7,8,9,10]))
+
+#AZ EGÉSZET MEGCSINÁLNI DEF-EL ÉS AZ UTOLSÓBA SORTED KELL
+# math.randint(-20,200) for i in range(30)) random lista generálásához
