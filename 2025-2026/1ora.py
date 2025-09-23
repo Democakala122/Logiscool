@@ -89,11 +89,13 @@ while True:
 # sum([n, m ]) = n + sum([m])
 
 def sum(lista: list) -> int:
+    if len(lista) == 0:
+        return 0
     if len(lista) == 1:
         return lista[0]
     return lista[0] + sum(lista[1:])
 
-print(sum([1,2,3,4,5]))
+print(sum([1,2,3,4,5,10]))
     
 
 
