@@ -96,10 +96,15 @@ def sum(lista: list) -> int:
     return lista[0] + sum(lista[1:])
 
 print(sum([1,2,3,4,5,10]))
-    
 
+#Hattvány függvény rekurzívan
+def power(a: int, b: int):
+    if a == 0 and b == 0:
+        return "ERROR"
+    if b == 0:
+        return 1
+    if b == 1:
+        return a
+    return a * power(a, b-1)
 
-
-
-
-
+print(power(2, 10))
