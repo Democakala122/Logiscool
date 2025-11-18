@@ -82,6 +82,9 @@ print(lista)
 
 # 5. feladat: Fordítsuk meg egy tuple elemeit
 myTuple = (1, 2, 3, 4, 5, 6)   # -> (6, 5, 4, 3, 2, 1)
+
+rev_myTuple = (item for item in myTuple[::-1])
+
 lista = [i for i in range(len(myTuple))]
 for i in range(len(myTuple)):
     lista[len(myTuple)-1-i] = myTuple[i]
@@ -95,7 +98,7 @@ print(rev_myTuple)
 
 # 6. feladat: Ugyan ennek a tuplenek vágjuk le az első és utolsó elemét,
 # majd mentsük el egy új tuple-be
-new_tuple = myTuple[0:-1]
+new_tuple = myTuple[1:-1]
 print(new_tuple)
 
 # 7. feladat: Határozzuk meg, hogy egy tuple-ben melyik indexen található az első kétjegyű szám
