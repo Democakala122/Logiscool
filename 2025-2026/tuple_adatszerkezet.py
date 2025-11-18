@@ -105,7 +105,7 @@ print(new_tuple)
 def two_num_tuple(atuple):
     for i in range(len(atuple)):
         if type(atuple[i]) == int:
-            if atuple[i] >= 10 and atuple[i] <= 99:
+            if atuple[i] >= 10 and atuple[i] <= 99 or atuple[i] <= -10 and atuple[i] >= -99:
                 return i
             
 print(two_num_tuple((6,7,3,"sss", ["nem", 43], 24, 56)))
