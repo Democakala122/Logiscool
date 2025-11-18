@@ -118,4 +118,7 @@ def add_vec(vec1, vec2):
 def sub_vec(vec1, vec2):
     return (vec1[0]-vec2[0], vec1[1]-vec2[1])
 
-def skal_vec()
+def skal_vec(vec1, mult):
+    return(vec1[0] * mult, vec1[1]* mult)
+
+print(sub_vec(add_vec(a, skal_vec(b, 2)), skal_vec(c, 3)))
