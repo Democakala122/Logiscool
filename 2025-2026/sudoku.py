@@ -9,6 +9,7 @@ board = [
         [1, 2, 0, 0, 0, 7, 4, 0, 0],
         [0, 4, 9, 2, 0, 6, 0, 0, 7]
     ]
+
 def find_empty(board):
     for i in range(len(board)):
         for j in range(len(board[i])):
@@ -26,8 +27,9 @@ def valid(board, num, row, col):
     for j in range(len(board)):
         if board[j][col] == num:
             return False
-    strow = row-row%3
-    stcol = col-col%3
+    strow = row - row%3
+    stcol = col - col%3
+    print(f"the up-left corner: {strow}:{stcol}")
     for i in range(3):
         for j in range(3):
             if board[strow+i][stcol+j] == num:
@@ -40,15 +42,13 @@ def solve(board):
     empty = find_empty(board)
     if empty == None:
         return True
-    
     row, col = empty # row, col = (0, 2) -> row = 0, col = 2
     for i in range(1, 10):
         if valid(board, i, row, col):
             board[row][col] = i
             if solve(board):
                 return True
-            else:
-                return False
+            board[row][col] = 0
     return False
 
 def print_board(board):
